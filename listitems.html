@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>پروژه نهایی شهرک اکباتان</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+        background-color: #eeeeee;
+        font-family: yekan;
+        font-size: 9pt;
+    }
+
+    @font-face {
+        font-family: 'yekan';
+        src: url(font/yekan.ttf) format('truetype'),
+        url('font/yekan.eot?#iefix') format('embedded-opentype');
+    }
+
+    * {
+        text-align: right;
+        direction: rtl
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    .yekan {
+        font-family: 'yekan'
+    }
+
+    .font1 {
+        font-size: 9pt
+    }
+
+    .font2 {
+        font-size: 9pt;
+        font-weight: bold
+    }
+
+    .font3 {
+        font-size: 10pt;
+    }
+
+</style>
+
+<body>
+
+
+<header>
+
+    <style>
+        header {
+            width: 100%;
+            height: 135px;
+            background-color: white;
+        }
+
+        #topheader {
+            width: 100%;
+            height: 35px;
+            background-color: #070059;
+        }
+
+        #topheader-main {
+            width: 90%;
+            height: 35px;
+            margin: 0 auto;
+        }
+
+        #section1-icon {
+            height: 16px;
+            width: 16px;
+            display: block;
+            background: url(picture/12.png) no-repeat;
+            float: right;
+            position: relative;
+            top: 7px;
+        }
+
+        #section1-text {
+            height: 100%;
+            float: right;
+            position: relative;
+            line-height: 32px;
+            right: 2%;
+            color: #ffffff
+        }
+
+        #section1-h1 {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 9pt;
+            height: 100%;
+        }
+
+        #section1-border {
+            height: 16px;
+            width: 1px;
+            background-color: #ffffff;
+            float: right;
+            display: block;
+            position: relative;
+            right: 4%;
+            top: 8px;
+        }
+
+        #section2-icon {
+            height: 16px;
+            width: 16px;
+            display: block;
+            background: url(picture/13.png) no-repeat;
+            float: right;
+            position: relative;
+            top: 8px;
+            right: 6%;
+        }
+
+        #section2-text {
+            height: 100%;
+            float: right;
+            position: relative;
+            line-height: 32px;
+            right: 8%;
+            color: #ffffff
+        }
+
+        #section3-text {
+            height: 100%;
+            float: left;
+            position: relative;
+            line-height: 32px;
+            color: #ffffff
+        }
+
+        #section3-icon {
+            height: 16px;
+            width: 16px;
+            display: block;
+            background: url(picture/7.png) no-repeat;
+            float: left;
+            position: relative;
+            left: 10px;
+            top: 7px;
+        }
+
+        @media screen and (max-width: 550px) {
+            #section3-text, #section3-icon {
+                display: none;
+            }
+        }
+
+
+    </style>
+    <div id="topheader">
+        <div id="topheader-main">
+
+            <span id="section1-icon"></span>
+            <a id="section1-text">
+                <h1 id="section1-h1">
+                    نیازمندی های شهرک اکباتان
+                </h1>
+            </a>
+            <span id="section1-border"></span>
+
+            <span id="section2-icon"></span>
+            <a id="section2-text">
+                معرفی شهرک اکباتان
+            </a>
+
+            <a id="section3-text">مجله اینترنتی اکبانت</a>
+            <span id="section3-icon"></span>
+
+        </div>
+    </div>
+
+    <style>
+        #bottom-header {
+            width: 90%;
+            height: 100px;
+            margin: auto;
+        }
+
+        #bottom-header #bottomheader-left img {
+            margin-top: 0.5%;
+            float: left;
+        }
+
+        #bottom-header #bottomheader-right img {
+            float: right;
+            position: relative;
+            top: 33px;
+        }
+
+        .menubtn {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 850px) {
+            .menubtn {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+    <div id="bottom-header">
+
+        <div id="bottomheader-right">
+            <img class="menubtn" src="picture/menu.png">
+        </div>
+
+
+        <div id="bottomheader-left">
+            <img src="">
+        </div>
+
+    </div>
+
+</header>
+<nav>
+
+    <style>
+        nav {
+            box-shadow: 0 2px 3px #c3c3c3;
+            -webkit-box-shadow: 0 2px 3px #c3c3c3;
+            -moz-box-shadow: 0 2px 3px #c3c3c3;
+            width: 100%;
+            height: 40px;
+            background-color: #efefef;
+            border-top: 1px solid #e4e5ee
+        }
+
+        #menu_top {
+
+            width: 91%;
+            height: 40px;
+            margin: auto
+        }
+
+        ul {
+            margin: 0
+        }
+
+        li {
+            list-style: none
+        }
+
+        #menu_top > ul {
+            position: relative;
+            padding: 0
+        }
+
+        #menu_top > ul > li {
+            float: right;
+            height: 40px
+        }
+
+        #menu_top > ul > li > a {
+            padding: 0 12px;
+            height: 40px;
+            display: block;
+            line-height: 38px
+        }
+
+        #menu_top > ul > li > ul {
+            position: absolute;
+            right: 0;
+            background-color: white;
+            width: 100%;
+            height: 46px;
+            padding: 0;
+            box-shadow: 1px 2px 3px #c3c3c3;
+            display: none;
+            margin-top: 3px;
+            z-index: 2;
+        }
+
+        #menu_top > ul > li > ul > li {
+            float: right;
+        }
+
+        #menu_top > ul > li > ul > li > a {
+            padding: 12px 14px;
+            display: block;
+        }
+
+        .menu_down_icon {
+            width: 8px;
+            height: 7px;
+            background: rgba(0, 0, 0, 0) url("picture/down.png") no-repeat;
+            display: block;
+            margin-right: 12px;
+            margin-top: 16px;
+            float: left;
+        }
+
+        #menu_top a {
+            cursor: pointer
+        }
+
+        @media screen and (max-width: 850px) {
+            nav {
+                height: auto;
+                display: none;
+            }
+
+            #menu_top > ul > li {
+                float: none;
+                height: auto;
+            }
+
+            #menu_top {
+                height: auto;
+                text-align: center;
+            }
+
+            #menu_top > ul > li > a {
+                text-align: center;
+            }
+
+            #menu_top > ul > li > ul {
+                height: auto;
+                z-index: 2;
+            }
+
+            #menu_top > ul > li > ul > li {
+                float: none;
+            }
+
+            #menu_top > ul > li > ul > li > a {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+    <div id="menu_top">
+        <ul>
+            <li>
+                <a>
+                    صفحه اصلی
+                </a>
+            </li>
+            <li>
+                <a>
+                    نیازمندی های شهر کیش
+                </a>
+            </li>
+            <li>
+                <a>
+                    تفریحات دریایی
+                    <span class="menu_down_icon"></span>
+                </a>
+                <ul>
+                    <li>
+                        <a>
+                            پیتزا و ساندویچ
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            قنادی ها
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            خشکبار
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            پسته
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li data-time="4">
+                <a>
+                    جنگ های شبانه
+                    <span class="menu_down_icon"></span>
+                </a>
+                <ul>
+                    <li>
+                        <a>
+                            لباس یک
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            لباس دو
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            لباس سه
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
+
+
+<style>
+    #main {
+        width: 100%;
+        height: auto;
+    }
+
+    #main-center {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #header-liststyle {
+        width: 100%;
+        height: 50px;
+        background-color: #00115f;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+
+    #icon-liststyle {
+        background: url(picture/back.png);
+        width: 8px;
+        height: 8px;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 3%;
+    }
+
+    #text-liststyle {
+        color: white;
+        position: relative;
+        right: 5%;
+        top: 15px;
+        width: 77%;
+        padding: 0;
+        font-weight: normal;
+        font-size: 9pt;
+    }
+
+    #direct-picture {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #direct-pic1 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+    }
+
+    #direct-pic2 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-right: 0.5%;
+    }
+
+    #direct-pic3 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-right: 0.5%;
+    }
+
+    #direct-pic4 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-top: 10px;
+
+    }
+
+    #direct-pic5 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-right: 0.5%;
+        margin-top: 10px;
+
+    }
+
+    #direct-pic6 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-right: 0.5%;
+        margin-top: 10px;
+
+    }
+
+    #direct-pic7 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-top: 10px;
+
+    }
+
+    #direct-pic8 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-right: 0.5%;
+        margin-top: 10px;
+
+    }
+
+    #direct-pic9 {
+        width: 33%;
+        height: 190px;
+        float: right;
+        background-color: greenyellow;
+        border-radius: 6px;
+        margin-right: 0.5%;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 750px) {
+        #direct-pic1, #direct-pic2, #direct-pic3, #direct-pic4, #direct-pic5, #direct-pic6, #direct-pic7, #direct-pic8, #direct-pic9 {
+            width: 100%;
+            margin-right: 0;
+            margin-top: 10px;
+        }
+
+        #text-liststyle {
+            right: 7%;
+
+        }
+    }
+
+
+</style>
+
+
+<div id="main">
+    <div id="main-center">
+        <div id="header-liststyle">
+            <span id="icon-liststyle"></span>
+            <h2 id="text-liststyle">فست فود های شهرک اکباتان</h2>
+        </div>
+        <div id="direct-picture">
+
+            <a id="direct-pic1"></a>
+            <a id="direct-pic2"></a>
+            <a id="direct-pic3"></a>
+            <a id="direct-pic4"></a>
+            <a id="direct-pic5"></a>
+            <a id="direct-pic6"></a>
+            <a id="direct-pic7"></a>
+            <a id="direct-pic8"></a>
+            <a id="direct-pic9"></a>
+
+
+        </div>
+    </div>
+</div>
+
+
+<footer>
+
+    <style>
+
+        footer {
+            width: 100%;
+            height: 250px;
+            background-color: #070059;
+            float: right;
+            display: block;
+            position: relative;
+            top: 15px;
+        }
+
+        #footer-main {
+            width: 100%;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #footertop {
+            width: 90%;
+            height: 50px;
+            border-radius: 6px;
+            background-color: white;
+            margin: 10px auto;
+            display: block;
+        }
+
+        #footer-section1logo {
+            width: 16px;
+            height: 16px;
+            float: right;
+            position: relative;
+            top: 15px;
+            background: url(picture/checked.png);
+            right: 20px;
+        }
+
+        #section1footer-text {
+            position: relative;
+            top: 13px;
+            right: 35px;
+            float: right;
+        }
+
+        #footer-border1 {
+            width: 1px;
+            height: 20px;
+            background-color: black;
+            position: relative;
+            right: 50px;
+            float: right;
+            top: 13px;
+        }
+
+        #footer-section2logo {
+            width: 16px;
+            height: 16px;
+            float: right;
+            position: relative;
+            top: 15px;
+            background: url(picture/checked.png);
+            right: 70px;
+        }
+
+        #section2footer-text {
+            position: relative;
+            top: 14px;
+            right: 85px;
+            float: right;
+        }
+
+        #footer-border2 {
+            width: 1px;
+            height: 20px;
+            background-color: black;
+            position: relative;
+            right: 110px;
+            float: right;
+            top: 13px;
+        }
+
+        #footer-section3logo {
+            width: 16px;
+            height: 16px;
+            float: right;
+            position: relative;
+            top: 15px;
+            background: url(picture/checked.png);
+            right: 135px;
+        }
+
+        #section3footer-text {
+            position: relative;
+            top: 14px;
+            right: 155px;
+            float: right;
+        }
+
+        #footerbottom {
+            width: 90%;
+            height: 180px;
+            margin: 0 auto;
+        }
+
+        #bottom-right {
+            width: 33%;
+            height: 180px;
+            float: right;
+            display: block;
+        }
+
+        #bottom-left {
+            width: 33%;
+            height: 180px;
+            float: left;
+            display: block;
+            color: white;
+        }
+
+        #ul-right {
+            display: block;
+            height: 50px;
+            width: 100%;
+            float: right;
+            padding: 0;
+        }
+
+        #li-right {
+            width: 100%;
+            height: 100%;
+            float: right;
+        }
+
+        #back1 {
+            background: url(picture/back.png) no-repeat;
+            float: right;
+            position: relative;
+            top: 23px;
+            width: 8px;
+            height: 8px;
+        }
+
+        #section1text-h4 {
+            font-weight: normal;
+            position: relative;
+            right: 25px;
+
+        }
+
+        #text-section1 {
+            font-size: 10pt;
+            color: white;
+        }
+
+        #bottom-center {
+            width: 33%;
+            height: 180px;
+            float: right;
+            display: block;
+        }
+
+        #footerbottom .email input {
+            width: 71%;
+            height: 35px;
+            border: 1px solid #a1a1a1;
+            font-family: yekan;
+            border-radius: 3px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        #footerbottom .email .btn {
+            width: 27%;
+            height: 37px;
+            background: #208de6 none repeat scroll 0 0;
+            display: block;
+            float: left;
+            margin-top: 1px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            text-align: center;
+            color: white;
+            font-family: yekan;
+            line-height: 32px;
+            font-size: 10pt;
+        }
+
+        footer .social {
+            float: left;
+            width: 100%;
+        }
+
+        footer .social img {
+            float: left;
+            margin-top: 30px
+        }
+
+        .social-bottom {
+            width: 29px;
+            height: 29px;
+            display: block;
+            float: right;
+            background: url(picture/Allpicture.png);
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+
+
+        @media screen and (max-width: 350px) {
+            #bottom-center {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            #section3footer-text, #footer-section3logo {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            #bottom-right, #bottom-center, #bottom-left {
+                width: 100%
+            }
+
+            footer, #footerbottom {
+                height: auto;
+            }
+
+        }
+
+
+    </style>
+
+    <div id="footer-main">
+        <div id="footertop">
+
+            <span id="footer-section1logo"></span>
+            <a id="section1footer-text">معرفی شهرک اکباتان</a>
+            <div id="footer-border1"></div>
+
+
+            <span id="footer-section2logo"></span>
+            <a id="section2footer-text">تماس با ما</a>
+            <div id="footer-border2"></div>
+
+
+            <span id="footer-section3logo"></span>
+            <a id="section3footer-text">سوالات متداول</a>
+
+        </div>
+        <div id="footerbottom">
+
+            <div id="bottom-right">
+
+                <ul id="ul-right">
+
+                    <li id="li-right">
+                        <span id="back1"></span>
+                        <h4 id="section1text-h4">
+                            <a id="text-section1">
+                                معرفی شهرک اکباتان </a>
+                        </h4>
+                    </li>
+                    <li id="li-right">
+                        <span id="back1"></span>
+                        <h4 id="section1text-h4">
+                            <a id="text-section1">
+                                خاطرات یک کودک از شهرک اکباتان
+                            </a>
+                        </h4>
+                    </li>
+                    <li id="li-right">
+                        <span id="back1"></span>
+                        <h4 id="section1text-h4">
+                            <a id="text-section1">
+                                تفریحات شبانه اکباتانی ها
+                            </a>
+                        </h4>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div id="bottom-center">
+
+                <ul id="ul-right">
+
+                    <li id="li-right">
+                        <span id="back1"></span>
+                        <h4 id="section1text-h4">
+                            <a id="text-section1">
+                                شهرک اکباتان ، جزیره ای مستقل از شهر تهران
+                            </a>
+
+                        </h4>
+                    </li>
+                    <li id="li-right">
+                        <span id="back1"></span>
+                        <h4 id="section1text-h4">
+                            <a id="text-section1">
+                                شهرک اکباتان، شهرکی بدون اجاق گازهای خانگی
+                            </a>
+                        </h4>
+                    </li>
+                    <li id="li-right">
+                        <span id="back1"></span>
+                        <h4 id="section1text-h4">
+                            <a id="text-section1">
+                                نیازمندی های شهرک اکباتان آنلاین شد.
+                            </a>
+                        </h4>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div id="bottom-left">
+                <div class="left">
+                    <p class="title yekan">
+                        از تخفیف‌ها و جدیدترین‌ اخبار شهرک اکباتان باخبر شوید!
+                    </p>
+                    <div class="email">
+                        <input type="text" style=" " placeholder="     آدرس ایمیل خود را وارد کنید">
+                        <span class="btn yekan font1 ">
+                        تایید ایمیل
+                    </span>
+                    </div>
+
+                    <div class="social">
+
+                        <a>
+                            <span class="social-bottom" style="background-position:-576px -621px "></span>
+                        </a>
+                        <a>
+                            <span class="social-bottom" style="background-position:-535px -621px "></span>
+                        </a>
+                        <a>
+                            <span class="social-bottom" style="background-position:-617px -621px "></span>
+                        </a>
+                        <a>
+                            <span class="social-bottom" style="background-position:-494px -621px "></span>
+                        </a>
+                        <a>
+                            <span class="social-bottom" style="background-position:-452px -621px "></span>
+                        </a>
+                        <a>
+                            <span class="social-bottom" style="background-position:-370px -621px "></span>
+                        </a>
+                        <a>
+                            <span class="social-bottom" style="background-position:-411px -621px "></span>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</footer>
+
+
+<script>
+
+    var sliderscrollTag = $(".sliderscroll");
+    var sliderscrollUl = sliderscrollTag.find('.sliderscroll-main ul');
+    var sliderscrollItems = sliderscrollUl.find('li');
+    var sliderscrollItemsNumbers = sliderscrollItems.length;
+    var sliderscrollNumbers = Math.ceil(sliderscrollItemsNumbers / 2);
+    var maxNegativeMargin = -(sliderscrollNumbers - 1) * 615;
+
+
+    function sliderscroll(direction) {
+
+        var marginRightnew;
+        var marginRightold = sliderscrollUl.css('margin-right');
+        marginRightold = parseFloat(marginRightold);
+
+        if (direction == 'left') {
+            marginRightnew = marginRightold - 615;
+        }
+        if (direction == 'right') {
+            marginRightnew = marginRightold + 615;
+        }
+
+        if (marginRightnew < maxNegativeMargin) {
+            marginRightnew = 0;
+        }
+        if (marginRightnew > 0) {
+            marginRightnew = maxNegativeMargin;
+        }
+
+        sliderscrollUl.animate({'marginRight': marginRightnew}, 3000)
+    }
+
+    $('.nexticon').click(function () {
+        sliderscroll('left');
+    });
+    $('.previcon').click(function () {
+        sliderscroll('right');
+    });
+
+
+    var sliderTag = $('#slider');
+    var sliderItems = sliderTag.find('.item');
+    var numItems = sliderItems.length;
+    var nextSlide = 1;
+    var timeOut = 5000;
+    var sliderNavigators = sliderTag.find("#slider-navigator ul li")
+
+    function slider() {
+
+        if (nextSlide > numItems) {
+            nextSlide = 1;
+        }
+
+        if (nextSlide < 1) {
+            nextSlide = numItems;
+        }
+        sliderItems.fadeOut(0);
+        sliderItems.eq(nextSlide - 1).fadeIn(100);
+        sliderNavigators.removeClass('active');
+        sliderNavigators.eq(nextSlide - 1).addClass('active');
+        nextSlide++;
+
+    }
+
+    slider();
+    var sliderInterval = setInterval(slider, timeOut);
+    sliderTag.mouseleave(function () {
+        clearInterval(sliderInterval);
+        sliderInterval = setInterval(goTonext, timeOut)
+    });
+
+    function goTonext() {
+        slider();
+    }
+
+    $('#slider #next-slideshow ').click(function () {
+        clearInterval(sliderInterval);
+        goToprev();
+
+    });
+
+    function goToprev() {
+        nextSlide = nextSlide - 2;
+        slider();
+    }
+
+    $('#slider #pre-slideshow ').click(function () {
+        clearInterval(sliderInterval);
+        goTonext();
+
+    });
+
+    function goToSlide(index) {
+        nextSlide = index;
+        slider();
+    }
+
+    $('#slider #slider-navigator li').click(function () {
+        clearInterval(sliderInterval);
+        var index = $(this).index();
+        goToSlide(index + 1);
+
+    });
+
+    $('button').click(function () {
+        slider();
+    });
+
+
+    /*slider2*/
+
+
+    var sliderTag2 = $('#slider2');
+    var sliderItems2 = sliderTag2.find('.item2');
+    var numItems2 = sliderItems2.length;
+    var nextSlide2 = 1;
+    var timeOut2 = 5000;
+    var sliderNavigators2 = sliderTag2.find("#slider2_navigator ul li")
+
+    function slider2() {
+
+        if (nextSlide2 > numItems2) {
+            nextSlide2 = 1;
+        }
+
+        if (nextSlide2 < 1) {
+            nextSlide2 = numItems2;
+        }
+        sliderItems2.fadeOut(0);
+        sliderItems2.eq(nextSlide2 - 1).fadeIn(100);
+        sliderNavigators2.removeClass('active');
+        sliderNavigators2.eq(nextSlide2 - 1).addClass('active');
+        nextSlide2++;
+
+    }
+
+    slider2();
+    var sliderInterval2 = setInterval(slider2, timeOut2);
+    sliderTag2.mouseleave(function () {
+        clearInterval(sliderInterval2);
+        sliderInterval2 = setInterval(goTonext2, timeOut2)
+    });
+
+    function goTonext2() {
+        slider2();
+    }
+
+    $('#slider2 #next-slideshow2 ').click(function () {
+        clearInterval(sliderInterval2);
+        goToprev2();
+
+    });
+
+    function goToprev2() {
+        nextSlide2 = nextSlide2 - 2;
+        slider2();
+    }
+
+    $('#slider2 #pre-slideshow2 ').click(function () {
+        clearInterval(sliderInterval2);
+        goTonext2();
+
+    });
+
+    function goToSlide2(index) {
+        nextSlide2 = index;
+        slider2();
+    }
+
+    $('#slider2 #slider2_navigator li').click(function () {
+        clearInterval(sliderInterval2);
+        var index = $(this).index();
+        goToSlide2(index + 1);
+
+    });
+
+    $('button').click(function () {
+        slider2();
+    });
+
+
+    /*menu*/
+
+    var timer = {};
+
+    $('#menu_top li').hover(function () {
+
+        var tag = $(this);
+        var timerAttr = tag.attr('data-time');
+        clearTimeout(timer[timerAttr]);
+        timer[timerAttr] = setTimeout(function () {
+            $('>ul', tag).fadeIn(0);
+            tag.addClass('active-menu');
+        }, 600);
+
+    }, function () {
+
+        var tag = $(this);
+        var timerAttr = tag.attr('data-time');
+        clearTimeout(timer[timerAttr]);
+        timer[timerAttr] = setTimeout(function () {
+            $('>ul', tag).fadeOut(0);
+            tag.removeClass('active-menu');
+        }, 600);
+    })
+
+    $(document).ready(function () {
+        $(".menubtn").click(function () {
+            $("nav").slideToggle();
+        })
+    });
+
+
+</script>
+
+</body>
+</html>
